@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bitt&Byte - Home</title>
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" class="img-logo">
+            <h1 class="titulo-logo">Bitt&Byte</h1>
+        </div>
+
+        <div class="menu-header">
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quemSomos.html">Quem somos</a></li>
+
+                    <div class="dropdown">
+                        <a class="dropbtn">Cursos</a>
+                        <div class="dropdown-content">
+                            <a href="fpoo.html">FPOO</a>
+                            <a href="lima.html">LIMA</a>
+                            <a href="sistemas.html">SO</a>
+                            <a href="hare.html">HARE</a>
+                        </div>
+                     </div>
+
+                    <li><a href="contato.html">Contato</a></li>
+                 </ul>
+                 
+                
+            </nav>
+        </div>
+    </header>
+
+    <main >
+        <div class="menu-top">
+            <h2>Bitt&Byte - Escola de Informática</h2>
+
+            <div class="logo-menu">
+                <a href="https://www.youtube.com/?gl=BR&hl=pt" target="_blank"><img src="logo-youtube.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="logo-facebook.png"> </a>
+                <a href="https://www.instagram.com/" target="_blank"> <img src="logo-instagram.png"></a>
+                <a href="https://twitter.com/home"><img src="logo-twitter.png"></a>
+            </div>
+        </div>
+
+        <h3>Formulário</h3>
+        
+        <form class="conteudo-formulario">
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required ></textarea> 
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+            </fieldset>
+            <fieldset>
+                <legend>Qual horário prefereser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de recber nossas novidades por email?</label>
+            <input type="submit" value="Enviar Formulário" class="enviar">
+        </form>
+    </main>
+
+</body>
+
+<footer>
+
+    <p class="texto-footer">Copyright &copy; 2021 - Monique Costa e Renato Marques</p>
+
+</footer>
+
+</html>
